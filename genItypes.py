@@ -1,11 +1,11 @@
-# This should get data for Gen I Base Stats
+# This should get data for Gen I Types
 
 # Import stuff
 # This is for handling urls
 import requests
-# This is for web parsing
+# This is for structuring the web page
 from bs4 import BeautifulSoup
-# This is for writing to a csv
+# This is for read/write csvs
 import csv
 
 # This function pulls the data out of some text
@@ -96,7 +96,7 @@ for number in range(1,86):
 	writer.writerow([num,name,type1,type2])
 	
 # For 086 to 151, the webpage changes stucture a little
-# Somehow a <tr> gets lost so using find_all('td') won't work	
+# Somehow a <tr> gets lost so using find_all('tr') for rows won't work	
 for number in range(86,152):
 	# Fills in zeros (1 => 001)
 	num = str(number).zfill(3)
