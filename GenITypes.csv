@@ -8,9 +8,9 @@ Number,Name,Type1,Type2
 007,Squirtle,water,NA
 008,Wartortle,water,NA
 009,Blastoise,water,NA
-010,Caterpie,bug,flying
+010,Caterpie,bug,NA
 011,Metapod,bug,NA
-012,Butterfree,bug,NA
+012,Butterfree,bug,flying
 013,Weedle,bug,poison
 014,Kakuna,bug,poison
 015,Beedrill,bug,poison
