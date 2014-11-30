@@ -79,7 +79,7 @@ for number in range(1,86):
 		type2 = getType2(type2)
 
 	# Fix mistake on Butterfree's 2nd type
-	if number == 012:
+	if number == 12:
 		type2 = 'flying'
 	# Remove Magnemite's and Magneton's Steel typing
 	if number == 81 or number == 82:
