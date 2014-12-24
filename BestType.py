@@ -36,8 +36,8 @@ for i in itertools.combinations(types,2):
 	count = count+1
 #print(typeMatches)
 
-# This function gets the Average Defence for one/two types
-def defenceAvg(types):
+# This function gets the Average defense for one/two types
+def defenseAvg(types):
 	# Get the numbers for the first type
 	typeStats = typeChart[types[0]]
 	# If there is a second type, get the crossproduct of the two
@@ -47,7 +47,7 @@ def defenceAvg(types):
 	Average = numpy.mean(typeStats)
 	RMSE = numpy.sqrt(numpy.mean(typeStats**2))
 	return(pandas.Series({'DAverage':Average,'DRMSE':RMSE}))
-dStats = typeMatches.apply(defenceAvg,axis=1)
+dStats = typeMatches.apply(defenseAvg,axis=1)
 	
 # Combine dStats and the different types
 finalStats=pandas.merge(typeMatches,dStats,left_index=True,right_index=True)
