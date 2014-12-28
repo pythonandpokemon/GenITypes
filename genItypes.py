@@ -85,9 +85,9 @@ for number in range(1,86):
 	if number == 81 or number == 82:
 		type2 = 'N/A'
 	
-	# I personally like 'NA' better than 'N/A'
+	# I personally like 'NaN' better than 'N/A'
 	if type2 == 'N/A':
-		type2 = 'NA'	
+		type2 = 'NaN'	
 
 	# Print/write stuff out
 	# I print it out because it might take a while
@@ -130,9 +130,9 @@ for number in range(86,152):
 	if number == 120:
 		type2 = 'N/A'
 	
-	# I personally like 'NA' better than 'N/A'
+	# I personally like 'NaN' better than 'N/A'
 	if type2 == 'N/A':
-		type2 = 'NA'	
+		type2 = 'NaN'	
 		
 	# Print/write stuff out
 	# I print it out because it might take a while

@@ -21,10 +21,10 @@ newTable = table.ix[1:,1:]
 
 # Reindex the columns
 # Some instructions in that top right blank
-types = ['Attack Down Defense Right']
+types = ['ATTACK DOWN DEFENSE RIGHT']
 # Add to new index and change unicode to ascii
 for text in newTable.ix[:,0].values:
-	types.append(text.encode('ascii'))
+	types.append(text.encode('ascii').upper())
 newTable.columns = types
 
 # Function to convert weird unicode to specific numbers
@@ -40,7 +40,7 @@ def putNumbers(text):
 		elif text == u'\xbd\xd7':
 			return 0.5
 		else:
-			return text
+			return text.upper()
 	except:
 		return text
 # Apply the function		
