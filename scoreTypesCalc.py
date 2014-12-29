@@ -23,6 +23,7 @@ typeChart = {
 'DRAGON' : [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.5, 0.5, 0.5, 0.5, 1.0, 2.0, 2.0] }
 typeChart = pandas.DataFrame(typeChart)
 
+# Add in the dual types for attacks
 for i in xrange(1,len(typeChart)+1):
 	for j in xrange(i+1,len(typeChart)+1):
 		typeChart[typeChart.columns.values[i] + "/" + typeChart.columns.values[j]] = pandas.Series(typeChart[typeChart.columns.values[i]]*typeChart[typeChart.columns.values[j]],index=typeChart.index)
