@@ -1,5 +1,4 @@
 import scoreTypesCalc
-# Need to stretch out the type chart to cover dual types
 
 import numpy
 import pandas
